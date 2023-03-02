@@ -12,8 +12,7 @@ This repo is tested on following environment:
 
 * Ubuntu: 20.04
 * Python: 3.8.10
-* gym:
-* mujoco: 
+* mujoco: 2.3.2
 
 ### Install dependencies
 
