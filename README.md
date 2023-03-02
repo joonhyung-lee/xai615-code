@@ -2,7 +2,7 @@
 
 This repo provides minimal hands-on code for the class XAI615.
 
-MuJoCo related code is employed from following OpenAI's repos: 
+MuJoCo related code is employed from following DeepMind's repos: 
 
 * [MuJoCo] https://github.com/deepmind/mujoco
 
