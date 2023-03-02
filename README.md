@@ -1,6 +1,6 @@
 # xai615-code
 
-This repo provides minimal hands-on code for the class XAI623.
+This repo provides minimal hands-on code for the class XAI615.
 
 MuJoCo related code is employed from following OpenAI's repos: 
 
