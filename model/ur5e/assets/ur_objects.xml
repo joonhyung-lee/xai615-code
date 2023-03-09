@@ -1,0 +1,91 @@
+<mujocoinclude>
+  <worldbody>
+    <!--Lighting property-->
+    <!-- <light name="light3" directional="true" pos="-1 0 7" /> -->
+    <!--Floor Property-->
+    <!-- <geom name='floor' material="floor_mat" pos='0 0 0' size='2.5 2.5 0.1'  type='plane' /> -->
+    <!-- Object Table -->
+    <body name="table" pos="0.98 0 0.0" euler="0 0 0">      <!-- added 0.16 about x axis -->
+        <geom size="0.6 0.45 .37" pos ="0. 0. 0.37" type="box" rgba="0.85 0.76 0.63 1"/>
+        <inertial pos="0 0 0" mass="1000" diaginertia="0 0 0" />
+    </body>
+
+    <!-- Blocks -->
+    <body name="table_block_right" pos="0.99 -0.47 0.7">
+        <!-- <joint type="free" damping="0.007" name="table_block_right" /> -->
+        <geom name="table_block_right" size="0.6 0.01 0.7" pos ="0.0 0. 0.0" type="box" rgba="0.2 0.2 0.2 1"/>
+    </body> 
+
+    <body name="table_block_left" pos="0.99 0.47 0.7">
+        <!-- <joint type="free" damping="0.007" name="table_block_left" /> -->
+        <geom name="table_block_left" size="0.6 0.01 0.7" pos ="0.0 0. 0.0" type="box" rgba="0.2 0.2 0.2 1"/>
+    </body> 
+
+    <body name="table_block_center" pos="1.60 0.0 0.7">
+        <!-- <joint type="free" damping="0.007" name="table_block_center" /> -->
+        <geom name="table_block_center" size="0.01 0.48 0.7" pos ="0.0 0. 0.0" type="box" rgba="0.2 0.2 0.2 1"/>
+    </body> 
+    
+    <body name="obj_box_01" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="obj_box_01_joint" />
+        <geom name="obj_box_01" fromto="0.0 0.0 0.15  0.0 0.0 0.0"  size="0.035 0.035 0.07" type="box" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_box_02" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="obj_box_02_joint" />
+        <geom name="obj_box_02" fromto="0.0 0.0 0.15 0.0 0.0 0.0"  size="0.035 0.035 0.07" type="box" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_box_03" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="obj_box_03_joint" />
+        <geom name="obj_box_03" fromto="0.0 0.0 0.15  0.0 0.0 0.0"  size="0.035 0.035 0.07" type="box" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_box_04" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="obj_box_04_joint" />
+        <geom name="obj_box_04" fromto="0.0 0.0 0.15  0.0 0.0 0.0"  size="0.035 0.035 0.07" type="box" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_box_05" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="obj_box_05_joint" />
+        <geom name="obj_box_05" fromto="0.0 0.0 0.15  0.0 0.0 0.0"  size="0.035 0.035 0.07" type="box" rgba="1 0.56 0.43 1"/>
+    </body> 
+   
+    <body name="target" pos="0.0 0.0 0.0">
+        <joint type="free" damping="0.007" name="target_joint" />
+        <geom name="target" fromto="0.0 0.0 0.12  0.0 0.0 0.0"  size="0.03 0.03 0.06" material="samsung_cube" type="box" rgba="1 1 1 1"/>
+    </body> 
+   
+    <!-- <body name="obj_cylinder_01" pos="0.7 -0.1 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_1_joint" />
+        <geom name="obj_cylinder_01" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.06" type="cylinder" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_cylinder_02" pos="0.7 -0.2 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_2_joint" />
+        <geom name="obj_cylinder_02" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.06" type="cylinder" rgba="1 0.56 0.43 1"/>
+    </body> 
+
+    <body name="obj_cylinder_03" pos="0.7 -0.3 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_3_joint" />
+        <geom name="obj_cylinder_03" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.06" type="cylinder" rgba="1 0.56 0.43 1"/>
+    </body>  -->
+
+    <!-- Thick cylinders -->
+    <!-- <body name="obj_cylinder_04" pos="0.7 0.1 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_4_joint" />
+        <geom name="obj_cylinder_04" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.07" type="cylinder" rgba="0.56 1 0.43 1"/>
+    </body> 
+
+    <body name="obj_cylinder_05" pos="0.7 0.2 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_5_joint" />
+        <geom name="obj_cylinder_05" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.07" type="cylinder" rgba="0.56 1 0.43 1"/>
+    </body> 
+
+    <body name="obj_cylinder_06" pos="0.7 0.3 0.86">
+        <joint type="free" damping="0.007" name="obj_cylinder_6_joint" />
+        <geom name="obj_cylinder_06" fromto="0.0 0.0 0.14  0.0 0.0 0.0" size="0.025 0.07" type="cylinder" rgba="0.56 1 0.43 1"/>
+    </body>  -->
+
+  </worldbody>
+</mujocoinclude>

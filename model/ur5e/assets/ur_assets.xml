@@ -1,0 +1,77 @@
+<mujocoinclude>
+    <asset>
+        <!-- Need to check -->
+        <mesh name="base" file="../visual/base.stl" />
+        <mesh name="shoulder" file="../visual/shoulder.stl" />
+        <mesh name="upperarm" file="../visual/upperarm.stl" />
+        <mesh name="forearm" file="../visual/forearm.stl" />
+        <mesh name="wrist1" file="../visual/wrist1.stl" />
+        <mesh name="wrist2" file="../visual/wrist2.stl" />
+        <mesh name="wrist3" file="../visual/wrist3.stl" />
+        <mesh name="mount" file="mount.stl" scale="0.0001 0.0001 0.0001" />
+        <mesh name="d435" file="d435.stl" scale="0.001 0.001 0.001" />
+
+        <mesh name="ur_rg2_gripper_base_link" file="./gripper_base_link.STL" />
+        <mesh name="rg2_gripper_finger1_finger_link" file="./gripper_finger1_finger_link.STL" />
+        <mesh name="rg2_gripper_finger1_inner_knuckle_link" file="./gripper_finger1_inner_knuckle_link.STL" />
+        <mesh name="rg2_gripper_finger1_finger_tip_link" file="./gripper_finger1_finger_tip_link.STL" />
+        <mesh name="rg2_gripper_finger2_finger_link" file="./gripper_finger2_finger_link.STL" />
+        <mesh name="rg2_gripper_finger2_inner_knuckle_link" file="./gripper_finger2_inner_knuckle_link.STL" />
+        <mesh name="rg2_gripper_finger2_finger_tip_link" file="./gripper_finger2_finger_tip_link.STL" />
+
+
+        <!-- <texture name="metal2"        type="cube"     file="./textures/metal2.png"/> -->
+        <!-- <material name="bench_mat2"      texture="metal2"   shininess="0.1" specular="0.5" reflectance="0.2"/> -->
+        <!-- Textures -->
+        <texture name="bench_tex"   type="2d"       builtin="flat" height="32" width="32" rgb1="0.7 0.7 0.7" />
+        <!-- <texture name="floor_tex"   type="2d"        builtin="checker" rgb1=".2 .3 .4" rgb2=".1 .2 .3" width="100" height="100" /> -->
+        <texture name="sky_tex"     type="skybox"   builtin="gradient" width="100" height="100" rgb1="1 1 1" rgb2="0.3 0.3 0.8" />
+        <texture name="texgeom"     type="cube"     builtin="flat" mark="cross" width="127" height="1278" rgb1="0.8 0.6 0.4" rgb2="0.8 0.6 0.4" markrgb="1 1 1" random="0.01" />
+
+        <texture name="metal"        type="cube"     file="./textures/metal.png"/>
+        <texture name="metal2"        type="cube"     file="./textures/metal2.png"/>
+        <texture name="wood"        type="cube"     file="./textures/wood2.png"/>
+        <texture name="apriltag_36h11"     type="cube"     file="./textures/resized_image.png"/>  <!-- tag36_11_00000 -->
+        <texture name="samsung"     type="cube"     file="./textures/samsung.png"/>  <!-- tag36_11_00000 -->
+
+        <!-- Materials -->
+        <!-- <material name='floor_mat'      texture="floor_tex"  shininess="0.8" texrepeat="10 10" specular="0.7"  reflectance="0.5" /> -->
+        <material name="bench_mat2"      texture="metal2"   shininess="0.1" specular="0.5" reflectance="0.2"/>
+        <material name="tablecube"      texture="wood" rgba=".8 .8 .8 1"/>
+        <material name="tablecube_apriltag_36h11"  texture="apriltag_36h11" rgba=".8 .8 .8 1"/>
+        <material name="samsung_cube"  texture="samsung" rgba=".8 .8 .8 1"/>
+
+        <material name='geom'           texture="texgeom"   texuniform="true" />
+
+    </asset>
+
+
+    <!--Contacts-->
+    <!-- <contact>
+        <exclude body1="box_link" body2="ur_base_link"/>
+        <exclude body1="ur_base_link" body2="ur_shoulder_link"/>
+        <exclude body1="ur_shoulder_link" body2="ur_upper_arm_link"/>
+        <exclude body1="ur_upper_arm_link" body2="ur_forearm_link"/>
+        <exclude body1="ur_forearm_link" body2="ur_wrist_1_link"/>
+        <exclude body1="ur_wrist_1_link" body2="ur_wrist_2_link"/>
+        <exclude body1="ur_wrist_2_link" body2="ur_wrist_3_link"/>
+        <exclude body1="ur_rg2_gripper_base_link" body2="ur_wrist_3_link"/>
+        <exclude body1="tcp_link" body2="ur_wrist_3_link"/>
+
+        <exclude body1="ur_rg2_gripper_base_link" body2="rg2_gripper_finger1_finger_link"/>
+        <exclude body1="ur_rg2_gripper_base_link" body2="rg2_gripper_finger2_finger_link"/>
+        <exclude body1="ur_rg2_gripper_base_link" body2="rg2_gripper_finger1_inner_knuckle_link"/>
+        <exclude body1="ur_rg2_gripper_base_link" body2="rg2_gripper_finger2_inner_knuckle_link"/>
+        
+        <exclude body1="rg2_gripper_finger1_finger_link" body2="rg2_gripper_finger1_inner_knuckle_link"/>
+        <exclude body1="rg2_gripper_finger2_finger_link" body2="rg2_gripper_finger2_inner_knuckle_link"/>
+
+        <exclude body1="rg2_gripper_finger1_inner_knuckle_link" body2="rg2_gripper_finger1_finger_tip_link"/>
+        <exclude body1="rg2_gripper_finger2_inner_knuckle_link" body2="rg2_gripper_finger2_finger_tip_link"/>
+        <exclude body1="rg2_gripper_finger1_finger_link" body2="rg2_gripper_finger1_finger_tip_link"/>
+        <exclude body1="rg2_gripper_finger2_finger_link" body2="rg2_gripper_finger2_finger_tip_link"/>
+
+    </contact> -->
+
+
+</mujocoinclude>
