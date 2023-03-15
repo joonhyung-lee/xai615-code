@@ -32,17 +32,15 @@
         <texture name="metal2"        type="cube"     file="./textures/metal2.png"/>
         <texture name="wood"        type="cube"     file="./textures/wood2.png"/>
         <texture name="apriltag_36h11"     type="cube"     file="./textures/resized_image.png"/>  <!-- tag36_11_00000 -->
-        <texture name="samsung"     type="cube"     file="./textures/samsung.png"/>  <!-- tag36_11_00000 -->
-
+        <!-- <texture name="samsung"     type="cube"     file="./textures/samsung.png"/>  -->
+        
         <!-- Materials -->
         <!-- <material name='floor_mat'      texture="floor_tex"  shininess="0.8" texrepeat="10 10" specular="0.7"  reflectance="0.5" /> -->
         <material name="bench_mat2"      texture="metal2"   shininess="0.1" specular="0.5" reflectance="0.2"/>
         <material name="tablecube"      texture="wood" rgba=".8 .8 .8 1"/>
         <material name="tablecube_apriltag_36h11"  texture="apriltag_36h11" rgba=".8 .8 .8 1"/>
-        <material name="samsung_cube"  texture="samsung" rgba=".8 .8 .8 1"/>
-
         <material name='geom'           texture="texgeom"   texuniform="true" />
-
+        <!-- <material name="samsung_cube"  texture="samsung" rgba=".8 .8 .8 1"/> -->
     </asset>
 
 
@@ -73,5 +71,15 @@
 
     </contact> -->
 
+    <contact>
+        <exclude body1="rg2_gripper_finger1_finger_link" body2="rg2_gripper_finger1_inner_knuckle_link"/>
+        <exclude body1="rg2_gripper_finger2_finger_link" body2="rg2_gripper_finger2_inner_knuckle_link"/>
+
+        <exclude body1="rg2_gripper_finger1_finger_link" body2="rg2_gripper_finger1_finger_tip_link"/>
+        <exclude body1="rg2_gripper_finger2_finger_link" body2="rg2_gripper_finger2_finger_tip_link"/>
+
+        <exclude body1="rg2_gripper_finger1_inner_knuckle_link" body2="rg2_gripper_finger1_finger_tip_link"/>
+        <exclude body1="rg2_gripper_finger2_inner_knuckle_link" body2="rg2_gripper_finger2_finger_tip_link"/>
+    </contact>
 
 </mujocoinclude>

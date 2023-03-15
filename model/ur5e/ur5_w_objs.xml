@@ -19,7 +19,8 @@
     <include file="./assets/simple_plane.xml"/> 
     
     <!-- ur body xml-->
-    <include file="assets/ur_body.xml"/>
+    <!-- <include file="assets/ur_body.xml"/> -->
+    <include file="assets/ur_gripper.xml"/>
 
     <!-- objects -->
     <include file="assets/ur_objects.xml"/>

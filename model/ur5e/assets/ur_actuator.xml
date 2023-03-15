@@ -16,6 +16,6 @@
         <motor name='ur_wrist_1_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_1_joint' gear="101"/>  <!--range -28 28-->
         <motor name='ur_wrist_2_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_2_joint' gear="101"/>
         <motor name='ur_wrist_3_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_3_joint' gear="101"/>
-        <!-- <motor name='ur_gripper_motor' ctrllimited="true" ctrlrange="-1 1" joint='gripper_finger1_joint' gear="101"/> -->
+        <motor name='ur_gripper_motor_left' ctrllimited="true" ctrlrange="-1 1" joint='gripper_finger2_joint' gear="101"/>
     </actuator>
 </mujocoinclude>
