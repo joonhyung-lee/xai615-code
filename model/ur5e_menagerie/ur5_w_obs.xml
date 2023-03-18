@@ -24,10 +24,11 @@
     </worldbody>
 
     <!-- ur body xml-->
-    <include file="ur5e.xml"/>
+    <include file="ur5e_position.xml"/>
+    <!-- <include file="ur5e_torque.xml"/> -->
 
     <!-- objects -->
-    <!-- <include file="assets/ur_objects.xml"/> -->
+    <include file="assets/ur_objects.xml"/>
 
 
 </mujoco>
