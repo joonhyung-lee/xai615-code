@@ -1,0 +1,14 @@
+
+<mujocoinclude>
+    <actuator>
+        <!-- Physical limits of the actuator. -->
+        <!--UR5-->
+        <position name='sho' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_shoulder_pan_joint' kp="500"/>
+        <position name='shoulder_lift' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_shoulder_lift_joint' kp="500"/>
+        <position name='forearm' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_elbow_joint' kp="500"/>
+        <position name='wrist_1' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_wrist_1_joint' kp="100"/>
+        <position name='wrist_2' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_wrist_2_joint' kp="100"/>
+        <position name='wrist_3' ctrllimited="true" ctrlrange="-3.14159 3.14159" joint='ur_wrist_3_joint' kp="100"/>
+        <position name='gripper' ctrllimited="true" ctrlrange="0 1" joint='gripper_finger2_joint' kp="100"/>
+    </actuator>
+</mujocoinclude>

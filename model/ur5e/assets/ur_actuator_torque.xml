@@ -1,0 +1,21 @@
+
+<mujocoinclude>
+    <actuator>
+        <!-- Physical limits of the actuator. -->
+        <!--UR5-->
+        <!-- <motor name='shoulder_pan_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_shoulder_pan_joint' gear="101"/>
+        <motor name='shoulder_lift_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_shoulder_lift_joint' gear="101"/>
+        <motor name='forearm_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_elbow_joint' gear="101" />
+        <motor name='wrist_1_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_1_joint' gear="101"/>
+        <motor name='wrist_2_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_2_joint' gear="101"/>
+        <motor name='wrist_3_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_3_joint' gear="101"/> -->
+
+        <motor name='ur_shoulder_pan_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_shoulder_pan_joint' gear="101"/>
+        <motor name='ur_shoulder_lift_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_shoulder_lift_joint' gear="101"/>
+        <motor name='ur_forearm_T' ctrllimited="true" ctrlrange="-2 2" joint='ur_elbow_joint' gear="101" />
+        <motor name='ur_wrist_1_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_1_joint' gear="101"/>
+        <motor name='ur_wrist_2_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_2_joint' gear="101"/>
+        <motor name='ur_wrist_3_T' ctrllimited="true" ctrlrange="-1 1" joint='ur_wrist_3_joint' gear="101"/>
+        <motor name='ur_gripper_motor_left' ctrllimited="true" ctrlrange="-1 1" joint='gripper_finger2_joint' gear="101"/>
+    </actuator>
+</mujocoinclude>

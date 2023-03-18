@@ -1,0 +1,46 @@
+<mujoco model="universal_robot_5e">
+    <!-- <compiler angle="radian" meshdir="mesh/ur5e_pedestal" inertiagrouprange="0 0"/> -->
+    <!-- <option impratio="20" cone="elliptic" density="1.2" viscosity="0.00002"/> -->
+    <compiler angle="radian"
+              inertiafromgeom="true"
+              meshdir="mesh/ur5e_pedestal"/>
+    <option timestep="2e-3"
+            iterations="10"
+            tolerance="1e-10"
+            impratio="20"/>
+    <size nconmax="5000" njmax="5000"/>
+    
+    <default>
+        <site rgba="0.8 0.6 0.7 0.3" type="ellipsoid" group="3"/>
+        <geom contype='1' conaffinity='1' condim='4'  margin="1e-3" solref=".01 1" solimp=".99 .99 .01" />
+        <joint armature="0.05" damping="0.05"/>
+
+        <default class="UR5">
+            <joint damping='65'/>
+        </default>
+        <default class="UR5e">
+            <joint damping='45'/>
+        </default>
+
+        <default class="GRIPPER">
+            <joint damping='5' type="hinge"/>
+        </default>
+    </default>
+
+
+    <!-- UR5e assets-->
+    <include file="assets/ur_assets.xml"/>
+
+    <!-- arena -->
+    <include file="./assets/simple_plane.xml"/> 
+    
+    <!-- ur body xml-->
+    <include file="assets/ur_body.xml"/>
+
+    <!-- objects -->
+    <include file="assets/ur_objects.xml"/>
+
+    <!-- ur arm actuator: You can choose [Torque, Position] Actuator -->
+    <include file="assets/ur_actuator_position.xml"/>
+
+</mujoco>
