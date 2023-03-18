@@ -87,7 +87,7 @@
 
     <body name="box_link" pos="0 0 0.395">
         <!-- Robot base table -->
-        <geom size=".036 .036 .395" pos ="0 0 0" type="box" material="bench_mat"/>
+        <geom size=".36 .36 .395" pos ="0 0 0" type="box" material="bench_mat"/>
         <inertial pos="0 0 0" mass="1000" diaginertia="0 0 0" />
 
         <body name="base" pos="0 0 0.395">
